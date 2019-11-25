@@ -1,85 +1,72 @@
 {
-	"compile-opt": {
-		"prefix": "compile_opt",
+	"COMPILE_OPT": {
+		"prefix": "COMPILE_OPT",
 		"body": [
-			"compile_opt ${1|idl2|}"
+			"COMPILE_OPT ${1|IDL2|}"
 		],
-		"description": "compile_opt",
+		"description": "COMPILE_OPT",
 		"scope": "source.idl"
 	},	
-	"Catch block": {
-		"prefix": "catch",
+	"CATCH block": {
+		"prefix": "CATCH",
 		"body": [
-			"catch, err",
-			"if (err ne 0) then begin",
-			"  catch, /CANCEL",
+			"CATCH, err",
+			"IF (err ne 0) THEN BEGIN",
+			"  CATCH, /CANCEL",
 			"  $0",
-			"endif"
+			"ENDIF"
 		],
-		"description": "Catch block",
+		"description": "CATCH block",
 		"scope": "source.idl"
 	},
-	"Function": {
-		"prefix": "function",
+	"FUNCTION": {
+		"prefix": "FUNCTION",
 		"body": [
-			"function $1",
-			"  compile_opt idl2",
-			"",
+			"FUNCTION $1",
 			"  $0",
-			"",
-			"end",
+			"END",
 			""
 		],
-		"description": "Function",
+		"description": "FUNCTION",
 		"scope": "source.idl"
 	},
-	"Function (with main)": {
-		"prefix": "function",
+	"FUNCTION (with main)": {
+		"prefix": "FUNCTION",
 		"body": [
-			"function $1",
-			"  compile_opt idl2",
-			"",
+			"FUNCTION $1",
 			"  $0",
-			"",
-			"end",
+			"END",
 			"",
 			"",
 			"; main level program",
 			"result = $1()",
-			"end"
+			"END"
 		],
-		"description": "Function (with main)",
+		"description": "FUNCTION (with main)",
 		"scope": "source.idl"
 	},
 	"Procedure": {
-		"prefix": "pro",
+		"prefix": "PRO",
 		"body": [
-			"pro $1",
-			"  compile_opt idl2",
-			"",
+			"PRO $1",
 			"  $0",
-			"",
-			"end",
+			"END",
 			""
 		],
 		"description": "Procedure",
 		"scope": "source.idl"
 	},
 	"Procedure (with main)": {
-		"prefix": "pro",
+		"prefix": "PRO",
 		"body": [
-			"pro $1",
-			"  compile_opt idl2",
-			"",
+			"PRO $1",
 			"  $0",
-			"",
-			"end",
+			"END",
 			"",
 			"",
 			"; main level program",
-			"",
 			"$1",
-			"end"
+			"END"
 		],
 		"description": "Procedure (with main)",
 		"scope": "source.idl"

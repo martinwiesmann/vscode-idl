@@ -1,39 +1,39 @@
 {
-	"Function (ENVI)": {
-		"prefix": "function",
+	"FUNCTION (ENVI)": {
+		"prefix": "FUNCTION",
 		"body": [
-			"function $1",
-			"  compile_opt idl2",
+			"FUNCTION $1",
+			"  COMPILE_OPT IDL2",
 			"",
 			"  ; get the current session of ENVI",
 			"  e = envi(/CURRENT)",
-			"  if (e eq !NULL) then begin",
+			"  IF (e eq !NULL) THEN BEGIN",
 			"    message, 'ENVI has not started yet, required!'",
-			"  endif",
+			"  ENDIF",
 			"",
 			"  $0",
 			"",
-			"end"
+			"END"
     ],		
-    "description": "Function (ENVI)",
+    "description": "FUNCTION (ENVI)",
 		"scope": "source.idl"
 	},
 	"Procedure (ENVI)": {
-		"prefix": "pro",
+		"prefix": "PTO",
 		"body": [
-			"pro $1",
-			"  compile_opt idl2",
+			"PRO $1",
+			"  COMPILE_OPT IDL2",
 			"",
 			"  ; get the current session of ENVI",
 			"  e = envi(/CURRENT)",
-			"  if (e eq !NULL) then begin",
+			"  IF (e eq !NULL) THEN BEGIN",
 			"    message, 'ENVI has not started yet, required!'",
-			"  endif",
+			"  ENDIF",
 			"",
 			"  $0",
 			"",
-      "end",
-      ""
+      		"END",
+      		""
 		],
 		"description": "Procedure (ENVI)",
 		"scope": "source.idl"

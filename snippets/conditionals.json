@@ -1,131 +1,131 @@
-{
-  "If then begin": {
-    "prefix": "if",
-    "body": [
-      "if ($1) then begin",
-      "  $0",
-      "endif",
-      ""
-    ],
-    "description": "If then begin",
-    "scope": "source.idl"
-  },
-  "Then begin": {
-    "prefix": "then begin",
-    "body": [
-      "then begin",
-      "  $0",
-      "endif",
-      ""
-    ],
-    "description": "Then begin",
-    "scope": "source.idl"
-  },
-  "Endif else begin": {
-    "prefix": "endif else",
-    "body": [
-      "else begin",
-      "  $0",
-      "endelse",
-      ""
-    ],
-    "description": "Endif else begin",
-    "scope": "source.idl"
-  },
-  "Else begin": {
-    "prefix": "else",
-    "body": [
-      "else begin",
-      "  $0",
-      "endelse",
-      ""
-    ],
-    "description": "Else begin",
-    "scope": "source.idl"
-  },
-  "Endif else if": {
-    "prefix": "endif else if",
-    "body": [
-      "else if ($1) then begin",
-      "  $0",
-      "endelse",
-      ""
-    ],
-    "description": "Endif else if",
-    "scope": "source.idl"
-  },
-  "Switch statement": {
-    "prefix": "switch",
-    "body": [
-      "switch ($1) of",
-      "  ($2): begin",
-      "    ${3}",
-      "  end",
-      "  else: begin ",
-      "    ${4|; do nothing|}",
-      "  end",
-      "endswitch",
-      ""
-    ],
-    "description": "Switch statement",
-    "scope": "source.idl"
-  },
-  "Switch statement of": {
-    "prefix": "of",
-    "body": [
-      "of",
-      "  ($2): begin",
-      "    $3",
-      "  end",
-      "  else: begin",
-      "    ${4|; do nothing|}",
-      "  end",
-      "endswitch",
-      ""
-    ],
-    "description": "Switch statement",
-    "scope": "source.idl"
-  },
-  "Case statement": {
-    "prefix": "case",
-    "body": [
-      "case ($1) of",
-      "  ($2): begin",
-      "    $3",
-      "  end",
-      "  else: begin ",
-      "    ${4|; do nothing|}",
-      "  end",
-      "endcase",
-      ""
-    ],
-    "description": "Case statement",
-    "scope": "source.idl"
-  },
-  "Case statement of": {
-    "prefix": "of",
-    "body": [
-      "of",
-      "  ($2): begin",
-      "    $3",
-      "  end",
-      "  else: begin ",
-      "    ${4|; do nothing|}",
-      "  end",
-      "endcase",
-      ""
-    ],
-    "description": "Case statement",
-    "scope": "source.idl"
-  },
-  "Begin-end statement": {
-    "prefix": "begin",
-    "body": [
-      "begin",
-      "  $0",
-      "end"
-    ],
-    "description": "Begin-end statement",
-    "scope": "source.idl"
-  }
+{	
+	"IF THEN BEGIN": {
+		"prefix": "IF",
+		"body": [
+			"IF $1 THEN BEGIN",
+			"  $0",
+			"ENDIF",
+			""
+		],
+		"description": "IF THEN BEGIN",
+		"scope": "source.idl"
+	},
+	"THEN BEGIN": {
+		"prefix": " THEN BEGIN",
+		"body": [
+			" THEN BEGIN",
+			"  $0",
+			"ENDIF",
+			""
+		],
+		"description": "THEN BEGIN",
+		"scope": "source.idl"
+	},
+	"ENDIF ELSE BEGIN": {
+		"prefix": "ENDIF ELSE",
+		"body": [
+			"ENDIF ELSE BEGIN",
+			"  $0",
+			"ENDELSE",
+			""
+		],
+		"description": "ENDIF ELSE BEGIN",
+		"scope": "source.idl"
+	},
+	"ELSE BEGIN": {
+		"prefix": "ELSE",
+		"body": [
+			"ELSE BEGIN",
+			"  $0",
+			"ENDELSE",
+			""
+		],
+		"description": "ELSE BEGIN",
+		"scope": "source.idl"
+	},
+	"ENDIF ELSE IF": {
+		"prefix": "ENDIF ELSE IF",
+		"body": [
+			"ELSE IF $1 THEN BEGIN",
+			"  $0",
+			"ENDELSE",
+			""
+		],
+		"description": "ENDIF ELSE IF",
+		"scope": "source.idl"
+	},
+	"SWITCH statement": {
+		"prefix": "SWITCH",
+		"body": [
+			"SWITCH $1 OF",
+			"  $2: BEGIN",
+			"    ${3}",
+			"  END",
+			"  ELSE: BEGIN ",
+			"    ${4|; do nothing|}",
+			"  END",
+			"ENDSWITCH",
+			""
+		],
+		"description": "SWITCH statement",
+		"scope": "source.idl"
+	},
+	"SWITCH statement OF": {
+		"prefix": "OF",
+		"body": [
+			"OF",
+			"  $2: BEGIN",
+			"    $3",
+			"  END",
+			"  ELSE: BEGIN",
+			"    ${4|; do nothing|}",
+			"  END",
+			"ENDSWITCH",
+			""
+		],
+		"description": "SWITCH statement",
+		"scope": "source.idl"
+	},
+	"CASE statement": {
+		"prefix": "CASE",
+		"body": [
+			"CASE $1 OF",
+			"  $2: BEGIN",
+			"    $3",
+			"  END",
+			"  ELSE: BEGIN ",
+			"    ${4|; do nothing|}",
+			"  END",
+			"ENDCASE",
+			""
+		],
+		"description": "CASE statement",
+		"scope": "source.idl"
+	},
+	"CASE statement OF": {
+		"prefix": "OF",
+		"body": [
+			"OF",
+			"  $2: BEGIN",
+			"    $3",
+			"  END",
+			"  ELSE: BEGIN ",
+			"    ${4|; do nothing|}",
+			"  END",
+			"ENDCASE",
+			""
+		],
+		"description": "CASE statement",
+		"scope": "source.idl"
+	},
+	"BEGIN-END statement":{
+		"prefix": "BEGIN",
+		"body": [
+			"BEGIN",
+			"  $0",
+			"END"
+		],
+		"description": "BEGIN-END statement",
+		"scope": "source.idl"
+	}
 }
